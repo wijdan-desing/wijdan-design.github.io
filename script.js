@@ -71,33 +71,33 @@ faqItems.forEach(item => {
 // ===== Contact Form Handling =====
 const contactForm = document.getElementById('contact-form');
 
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
+if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+        // Formspree handles the submission, but we can add client-side validation
+        const name = contactForm.querySelector('input[type="text"]').value;
+        const email = contactForm.querySelector('input[type="email"]').value;
+        const subject = contactForm.querySelectorAll('input[type="text"]')[1].value;
+        const message = contactForm.querySelector('textarea').value;
 
-    // Get form data
-    const formData = new FormData(contactForm);
-    const name = contactForm.querySelector('input[type="text"]').value;
-    const email = contactForm.querySelector('input[type="email"]').value;
-    const subject = contactForm.querySelectorAll('input[type="text"]')[1].value;
-    const message = contactForm.querySelector('textarea').value;
+        // Simple validation
+        if (!name || !email || !subject || !message) {
+            e.preventDefault();
+            alert('Please fill in all fields');
+            return;
+        }
 
-    // Simple validation
-    if (!name || !email || !subject || !message) {
-        alert('Please fill in all fields');
-        return;
-    }
+        // Email validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            e.preventDefault();
+            alert('Please enter a valid email address');
+            return;
+        }
 
-    // Email validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-        alert('Please enter a valid email address');
-        return;
-    }
-
-    // Simulate form submission
-    alert('Thank you for your message! We will get back to you soon.');
-    contactForm.reset();
-});
+        // Form will submit to Formspree
+        // Note: Replace 'your-form-id' in the HTML action attribute with your actual Formspree form ID
+    });
+}
 
 // ===== Scroll Animation on Element Visibility =====
 const observerOptions = {
@@ -116,7 +116,7 @@ const observer = new IntersectionObserver((entries) => {
 
 // Observe all service cards, portfolio items, and team cards
 const animatedElements = document.querySelectorAll(
-    '.service-card, .portfolio-item, .team-card, .testimonial-card, .about-card'
+    '.service-card, .portfolio-item, .testimonial-card, .skill-category, .timeline-item'
 );
 
 animatedElements.forEach(el => {
@@ -208,4 +208,4 @@ if (window.history.replaceState) {
     window.history.replaceState(null, null, window.location.href);
 }
 
-console.log('Indvisula Company website loaded successfully!');
+console.log('HAL Technologies website loaded successfully!');
