@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indvisula Company - Building Exceptional Applications</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="#hero" class="logo">Indvisula</a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#team" class="nav-link">Team</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#faq" class="nav-link">FAQ</a></li>
+                <li><a href="#contact" class="nav-link contact-btn">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Building <span class="gradient-text">Exceptional</span> Applications
+                    </h1>
+                    <p class="hero-subtitle">
+                        We transform ideas into powerful digital experiences across mobile, web, and desktop platforms. Your vision, our expertise.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Start Your Project</a>
+                        <a href="#portfolio" class="btn btn-secondary">View Our Work</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">150+</span>
+                            <span class="stat-label">Projects Delivered</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Happy Clients</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="floating-shapes">
+                        <div class="shape shape-1"></div>
+                        <div class="shape shape-2"></div>
+                        <div class="shape shape-3"></div>
+                    </div>
+                    <div class="hero-card">
+                        <div class="card-icon">
+                            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <h3>Full-Stack Solutions</h3>
+                        <p>From concept to deployment, we handle everything</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What We Do</span>
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Comprehensive application development solutions tailored to your needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                            <line x1="12" y1="18" x2="12.01" y2="18"/>
+                        </svg>
+                    </div>
+                    <h3>Mobile Applications</h3>
+                    <p>Native iOS, Android, and cross-platform mobile apps built with React Native and Flutter for seamless user experiences.</p>
+                    <a href="#contact" class="service-link">Learn More →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <line x1="2" y1="12" x2="22" y2="12"/>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                        </svg>
+                    </div>
+                    <h3>Web Applications</h3>
+                    <p>Scalable SaaS platforms, progressive web apps, and enterprise web solutions using modern frameworks and best practices.</p>
+                    <a href="#contact" class="service-link">Learn More →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
+                        </svg>
+                    </div>
+                    <h3>Desktop Software</h3>
+                    <p>Powerful desktop applications for Windows, Mac, and Linux using Electron, .NET, and native technologies.</p>
+                    <a href="#contact" class="service-link">Learn More →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                            <line x1="12" y1="22.08" x2="12" y2="12"/>
+                        </svg>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>User-centered design that combines aesthetics with functionality to create intuitive and engaging digital experiences.</p>
+                    <a href="#contact" class="service-link">Learn More →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+                            <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+                        </svg>
+                    </div>
+                    <h3>Consulting & Strategy</h3>
+                    <p>Technical consulting and digital transformation strategies to help businesses leverage technology effectively.</p>
+                    <a href="#contact" class="service-link">Learn More →</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <h3>Maintenance & Support</h3>
+                    <p>Ongoing maintenance, updates, and technical support to ensure your applications run smoothly and stay secure.</p>
+                    <a href="#contact" class="service-link">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Work</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Explore some of our recent work and success stories</p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h3>E-Commerce Platform</h3>
+                            <p>Full-stack web application with payment integration</p>
+                            <span class="portfolio-tag">Web App</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h3>Fitness Tracker App</h3>
+                            <p>Cross-platform mobile application</p>
+                            <span class="portfolio-tag">Mobile</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h3>Enterprise Dashboard</h3>
+                            <p>Data analytics and visualization platform</p>
+                            <span class="portfolio-tag">SaaS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h3>Task Management Tool</h3>
+                            <p>Desktop productivity application</p>
+                            <span class="portfolio-tag">Desktop</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h3>Social Networking App</h3>
+                            <p>Community-driven mobile platform</p>
+                            <span class="portfolio-tag">Mobile</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h3>Learning Management System</h3>
+                            <p>Education platform for institutions</p>
+                            <span class="portfolio-tag">Web App</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <span class="section-tag">About Us</span>
+                    <h2 class="section-title">We Build Digital Excellence</h2>
+                    <p class="about-description">
+                        Indvisula Company is a premier application development firm dedicated to transforming innovative ideas into powerful digital solutions. With over 5 years of experience, we've helped businesses of all sizes achieve their digital transformation goals.
+                    </p>
+                    <p class="about-description">
+                        Our team of expert developers, designers, and strategists work collaboratively to deliver applications that not only meet but exceed expectations. We believe in quality, innovation, and building lasting partnerships with our clients.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <div class="feature-icon">✓</div>
+                            <span>Agile Development Methodology</span>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">✓</div>
+                            <span>Transparent Communication</span>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">✓</div>
+                            <span>Scalable Solutions</span>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">✓</div>
+                            <span>24/7 Support</span>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">Work With Us</a>
+                </div>
+                <div class="about-visual">
+                    <div class="about-card">
+                        <div class="about-card-content">
+                            <h3>Our Mission</h3>
+                            <p>To empower businesses with cutting-edge technology solutions that drive growth, efficiency, and innovation in the digital age.</p>
+                        </div>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-card-content">
+                            <h3>Our Vision</h3>
+                            <p>To be the trusted partner for organizations seeking digital transformation, known for excellence, innovation, and client success.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Team</span>
+                <h2 class="section-title">Meet the Experts</h2>
+                <p class="section-subtitle">Talented professionals dedicated to your success</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-image">
+                        <div class="team-placeholder">AM</div>
+                    </div>
+                    <h3>Anwar Mohammed</h3>
+                    <p class="team-role">Founder & Lead Developer</p>
+                    <p class="team-bio">Computer Science expert with passion for building innovative solutions</p>
+                    <div class="team-social">
+                        <a href="#" class="social-link">GitHub</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-image">
+                        <div class="team-placeholder">JD</div>
+                    </div>
+                    <h3>John Doe</h3>
+                    <p class="team-role">Senior UI/UX Designer</p>
+                    <p class="team-bio">Creating beautiful and intuitive user experiences</p>
+                    <div class="team-social">
+                        <a href="#" class="social-link">Dribbble</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-image">
+                        <div class="team-placeholder">SJ</div>
+                    </div>
+                    <h3>Sarah Johnson</h3>
+                    <p class="team-role">Backend Developer</p>
+                    <p class="team-bio">Expert in scalable architecture and database design</p>
+                    <div class="team-social">
+                        <a href="#" class="social-link">GitHub</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-image">
+                        <div class="team-placeholder">MK</div>
+                    </div>
+                    <h3>Michael Kim</h3>
+                    <p class="team-role">Mobile Developer</p>
+                    <p class="team-bio">Specializing in cross-platform mobile applications</p>
+                    <div class="team-social">
+                        <a href="#" class="social-link">GitHub</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">What Clients Say</h2>
+                <p class="section-subtitle">Feedback from our valued partners</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="testimonial-rating">★★★★★</div>
+                        <p class="testimonial-text">"Indvisula Company delivered beyond our expectations. Their attention to detail and technical expertise made our project a huge success."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">ER</div>
+                            <div class="author-info">
+                                <h4>Emily Roberts</h4>
+                                <p>CEO, TechStart Inc.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="testimonial-rating">★★★★★</div>
+                        <p class="testimonial-text">"Professional, responsive, and incredibly talented. They transformed our vision into a beautiful, functional application."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">DW</div>
+                            <div class="author-info">
+                                <h4>David Wilson</h4>
+                                <p>Founder, InnovateLab</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="testimonial-rating">★★★★★</div>
+                        <p class="testimonial-text">"The team at Indvisula is exceptional. They understood our needs perfectly and delivered on time and within budget."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">LP</div>
+                            <div class="author-info">
+                                <h4>Lisa Park</h4>
+                                <p>CTO, Digital Ventures</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">FAQ</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Common questions about our services</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What types of applications do you develop?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We develop mobile applications (iOS, Android, cross-platform), web applications (SaaS, PWA, enterprise), and desktop software for Windows, Mac, and Linux. Our expertise spans across all major platforms and technologies.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How long does it take to complete a project?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Project timelines vary based on complexity and scope. A simple mobile app might take 2-3 months, while complex enterprise solutions can take 6-12 months. We provide detailed timelines during our initial consultation.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is your pricing structure?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer flexible pricing models including fixed-price projects, hourly rates, and retainer agreements. Pricing depends on project requirements, technology stack, and timeline. Contact us for a custom quote.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you provide ongoing support and maintenance?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer comprehensive maintenance and support packages to ensure your applications run smoothly. This includes bug fixes, updates, security patches, and feature enhancements as needed.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What technologies do you use?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We use modern technologies including React, Vue, Angular for web; React Native and Flutter for mobile; Electron for desktop; and various backend technologies like Node.js, Python, and .NET. We choose the best tools for each project.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Start Your Project</h2>
+                <p class="section-subtitle">Ready to bring your idea to life? Let's talk.</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>contact@indvisula.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Global Remote Team</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Indvisula</h3>
+                    <p>Building exceptional applications for businesses worldwide.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Mobile Apps</a></li>
+                        <li><a href="#services">Web Apps</a></li>
+                        <li><a href="#services">Desktop Software</a></li>
+                        <li><a href="#services">UI/UX Design</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">GitHub</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Indvisula Company. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
