@@ -69,35 +69,7 @@ faqItems.forEach(item => {
 });
 
 // ===== Contact Form Handling =====
-const contactForm = document.getElementById('contact-form');
-
-if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-        // Formspree handles the submission, but we can add client-side validation
-        const name = contactForm.querySelector('input[type="text"]').value;
-        const email = contactForm.querySelector('input[type="email"]').value;
-        const subject = contactForm.querySelectorAll('input[type="text"]')[1].value;
-        const message = contactForm.querySelector('textarea').value;
-
-        // Simple validation
-        if (!name || !email || !subject || !message) {
-            e.preventDefault();
-            alert('Please fill in all fields');
-            return;
-        }
-
-        // Email validation
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(email)) {
-            e.preventDefault();
-            alert('Please enter a valid email address');
-            return;
-        }
-
-        // Form will submit to Formspree
-        // Note: Replace 'your-form-id' in the HTML action attribute with your actual Formspree form ID
-    });
-}
+// Direct contact buttons - no form validation needed
 
 // ===== Scroll Animation on Element Visibility =====
 const observerOptions = {
